@@ -12,19 +12,21 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState('video');
 
   // Mock data for effects grid (matches the Viral AI Videos section in screenshot)
+  // Mock data for effects grid (matches the Viral AI Videos section in screenshot)
   const viralEffects = [
-    { title: "AI Kissing Video Generator", count: "3M", image: "linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%)", href: "/video-effects/ai-kissing", category: "Viral", isHot: true },
-    { title: "AI Muscle Generator", count: "149.4K", image: "linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)", href: "/video-effects/muscle", category: "Viral", isHot: true },
-    { title: "AI Bikini", count: "127.1K", image: "linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)", href: "/video-effects/bikini", category: "Dance", isHot: true },
-    { title: "AI Jiggle Video Effect", count: "73.9K", image: "linear-gradient(120deg, #f093fb 0%, #f5576c 100%)", href: "/video-effects/jiggle", category: "Funny", isHot: false },
-    { title: "Earth Zoom In", count: "51.6K", image: "linear-gradient(to top, #30cfd0 0%, #330867 100%)", href: "/video-effects/earth-zoom", category: "Cinematic", isHot: true },
+    { title: "AI Kissing Video Generator", count: "3M", image: "/images/cms/AI-Kissing_正常接吻_2.png", href: "/video-effects/ai-kissing", category: "Viral", isHot: true },
+    { title: "AI Muscle Generator", count: "149.4K", image: "/images/cms/Muscle_肌肉展示_2.png", href: "/video-effects/muscle", category: "Viral", isHot: true },
+    { title: "AI Bikini", count: "127.1K", image: "/images/cms/AI-Dance-Generator_肚皮舞_2.png", href: "/video-effects/bikini", category: "Dance", isHot: true },
+    { title: "AI Jiggle Video Effect", count: "73.9K", image: "/images/cms/Jiggle_抖动身体_2.png", href: "/video-effects/jiggle", category: "Funny", isHot: false },
+    { title: "AI Hug Video", count: "51.6K", image: "/images/cms/Hug_拥抱_2.png", href: "/video-effects/hug", category: "Emotional", isHot: true },
+    { title: "AI Fake Date", count: "42.0K", image: "/images/cms/AI-Fake-Date_女友约会_2.png", href: "/video-effects/fake-date", category: "Viral", isHot: false },
   ];
 
   const photoEffects = [
-    { title: "Ghibli Art Style", count: "89.2K", image: "linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%)", href: "/photo-effects/ghibli", category: "Art", isHot: true },
+    { title: "AI Pregnant Filter", count: "250K", image: "/images/cms/Pregnant-AI_怀孕_2.png", href: "/photo-effects/pregnant", category: "AI Style", isHot: true },
+    { title: "AI Selfie with Celebrities", count: "120K", image: "/images/cms/AI-Selfie-with-Celebrities_名人合拍_2.png", href: "/photo-effects/selfie", category: "Fun", isHot: true },
+    { title: "Ghibli Art Style", count: "89.2K", image: "linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%)", href: "/photo-effects/ghibli", category: "Art", isHot: true }, // Placeholder
     { title: "Cyberpunk Portrait", count: "45.6K", image: "linear-gradient(to right, #4facfe 0%, #00f2fe 100%)", href: "/photo-effects/cyberpunk", category: "Art", isHot: false },
-    { title: "Old Photo Restoration", count: "32.1K", image: "linear-gradient(to top, #c471f5 0%, #fa71cd 100%)", href: "/photo-effects/restoration", category: "Utility", isHot: true },
-    { title: "Cartoon Yourself", count: "120K", image: "linear-gradient(to right, #f83600 0%, #f9d423 100%)", href: "/photo-effects/cartoon", category: "Fun", isHot: true },
   ];
 
   const currentEffects = activeTab === 'video' ? viralEffects : photoEffects;

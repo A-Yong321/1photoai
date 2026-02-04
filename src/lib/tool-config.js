@@ -137,6 +137,106 @@ export const toolConfig = {
         platform: 'suno'
     },
 
+    // === Viral Video Effects ===
+    'ai-kissing': {
+        title: 'AI Kissing Generator',
+        prompt: 'Romantic kiss between two people, cinematic lighting, 4k',
+        type: 'video',
+        aspectRatio: '16:9',
+        duration: 5,
+        platform: 'kling',
+        requiresUpload: true
+    },
+    'hug': {
+        title: 'AI Hug Generator',
+        prompt: 'Warm emotional hug between people, cinematic style',
+        type: 'video',
+        aspectRatio: '16:9',
+        duration: 5,
+        platform: 'kling',
+        requiresUpload: true
+    },
+    'twerk': {
+        title: 'Twerk Dance Generator',
+        prompt: 'Energetic twerk dance performance, viral tiktok style',
+        type: 'video',
+        aspectRatio: '9:16',
+        duration: 10,
+        platform: 'dreamina'
+    },
+    'muscle': {
+        title: 'Muscle Flex Effect',
+        prompt: 'Person showing off huge muscles, bodybuilder pose, realistic',
+        type: 'video',
+        aspectRatio: '9:16',
+        duration: 5,
+        platform: 'kling'
+    },
+    'earth-zoom': {
+        title: 'Earth Zoom Effect',
+        prompt: 'Dramatic zoom from outer space down to a specific location on earth',
+        type: 'video',
+        aspectRatio: '16:9',
+        duration: 10,
+        platform: 'kling'
+    },
+    'salsa': {
+        title: 'Salsa Dance Generator',
+        prompt: 'Professional salsa dance performance, rhythm and passion',
+        type: 'video',
+        aspectRatio: '16:9',
+        duration: 10,
+        platform: 'dreamina'
+    },
+    'glitch': {
+        title: 'Cyberpunk Glitch Effect',
+        prompt: 'Futuristic cyberpunk style, digital glitch effects, neon colors',
+        type: 'video',
+        aspectRatio: '16:9',
+        duration: 5,
+        platform: 'kling'
+    },
+    'old-film': {
+        title: 'Vintage Old Film',
+        prompt: '1920s silent movie style, black and white, film grain, scratches',
+        type: 'video',
+        aspectRatio: '16:9',
+        duration: 10,
+        platform: 'kling'
+    },
+
+    // === Photo Effects ===
+    'ai-vtuber': {
+        title: 'AI VTuber Avatar',
+        prompt: 'Cute anime VTuber girl avatar, colorful hair, expressive eyes, live2d style',
+        type: 'image',
+        aspectRatio: '1:1',
+        platform: 'dreamina'
+    },
+    'ai-selfie': {
+        title: 'AI Celebrity Selfie',
+        prompt: 'Realistic selfie with a celebrity, casual style, high detail',
+        type: 'image',
+        aspectRatio: '9:16',
+        platform: 'grok',
+        requiresUpload: true
+    },
+    'pregnant-ai': {
+        title: 'Pregnant AI Filter',
+        prompt: 'Woman with pregnant belly, happy expression, maternity photoshoot style',
+        type: 'image',
+        aspectRatio: '1:1',
+        platform: 'grok',
+        requiresUpload: true
+    },
+    'ghibli': {
+        title: 'Ghibli Style Generator',
+        prompt: 'Scene in Studio Ghibli art style, whimsical, vibrant colors, detailed background',
+        type: 'image',
+        aspectRatio: '16:9',
+        platform: 'dreamina'
+    },
+
     // Default fallback
     'default': {
         title: 'AI Creation Tool',

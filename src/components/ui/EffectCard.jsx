@@ -3,10 +3,12 @@
 import Link from 'next/link';
 
 export default function EffectCard({ title, count, image, href, isHot }) {
+  const bgStyle = image?.includes('gradient') ? image : `url('${image}')`;
+
   return (
     <Link href={href} className="effect-card">
       <div className="image-wrapper">
-        <div className="placeholder-image" style={{ background: image }}></div>
+        <div className="placeholder-image" style={{ backgroundImage: bgStyle }}></div>
 
         {/* Overlays */}
         <div className="card-overlays">

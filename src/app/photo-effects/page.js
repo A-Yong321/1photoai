@@ -4,22 +4,17 @@ import Link from 'next/link';
 import { useState } from 'react';
 import EffectCard from '@/components/ui/EffectCard';
 
-export default function VideoEffectsPage() {
+export default function PhotoEffectsPage() {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const effects = [
-    { title: "AI Kissing", count: "1.2M", image: "/images/cms/AI-Kissing_正常接吻_2.png", href: "/video-effects/ai-kissing", category: "Viral", isHot: true },
-    { title: "Warm Hug", count: "890k", image: "/images/cms/Hug_背后环抱_2.png", href: "/video-effects/hug", category: "Viral", isHot: true },
-    { title: "Twerk Dance", count: "2.5M", image: "/images/cms/Twerk_扭臀舞_2.png", href: "/video-effects/twerk", category: "Dance", isHot: true },
-    { title: "Muscle Flex", count: "500k", image: "/images/cms/Muscle_肌肉展示_2.png", href: "/video-effects/muscle", category: "Funny", isHot: true },
-    { title: "AI Jiggle", count: "340k", image: "/images/cms/Jiggle_抖动身体_2.png", href: "/video-effects/jiggle", category: "Funny", isHot: false },
-    { title: "Belly Dance", count: "120k", image: "/images/cms/AI-Dance-Generator_肚皮舞_2.png", href: "/video-effects/belly-dance", category: "Dance", isHot: false },
-    { title: "French Kiss", count: "450k", image: "/images/cms/AI-Kissing_法式接吻_2.png", href: "/video-effects/french-kiss", category: "Viral", isHot: true },
-    { title: "Princess Hug", count: "210k", image: "/images/cms/Hug_公主抱_2.png", href: "/video-effects/princess-hug", category: "Viral", isHot: false },
-    { title: "Fake Date", count: "180k", image: "/images/cms/AI-Fake-Date_女友约会_2.png", href: "/video-effects/fake-date", category: "Viral", isHot: false },
+    { title: "AI VTuber", count: "1.5M", image: "/images/cms/AI-Fake-Date_日本女友_2.png", href: "/photo-effects/ai-vtuber", category: "Avatar", isHot: true },
+    { title: "AI Selfie", count: "920k", image: "/images/cms/AI-Selfie-with-Celebrities_名人合拍_2.png", href: "/photo-effects/ai-selfie", category: "Social", isHot: true },
+    { title: "Pregnant AI", count: "300k", image: "/images/cms/Pregnant-AI_怀孕_2.png", href: "/photo-effects/pregnant-ai", category: "Funny", isHot: true },
+    { title: "Ghibli Style", count: "2.1M", image: "/images/cms/AI-Fake-Date_中国女友_2.png", href: "/photo-effects/ghibli", category: "Art", isHot: true },
   ];
 
-  const categories = ["All", "Viral", "Dance", "Funny"];
+  const categories = ["All", "Avatar", "Social", "Funny", "Art"];
 
   const filteredEffects = activeCategory === "All"
     ? effects
@@ -28,8 +23,8 @@ export default function VideoEffectsPage() {
   return (
     <main className="effects-page container">
       <div className="page-header">
-        <h1>Video Effects Library</h1>
-        <p>Explore thousands of viral templates and create your own trend.</p>
+        <h1>Photo Effects Library</h1>
+        <p>Transform your photos with trending AI styles and filters.</p>
       </div>
 
       <div className="filter-bar">

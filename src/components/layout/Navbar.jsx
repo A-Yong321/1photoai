@@ -54,11 +54,13 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex nav-links">
           <Link href="/" className="nav-link">Home</Link>
+          <Link href="/tools" className="nav-link">All Tools</Link>
 
           <Link href="/video-ai" className="nav-link">Video AI</Link>
           <Link href="/image-ai" className="nav-link">Image AI</Link>
 
           <Link href="/video-effects" className="nav-link">Video Effects</Link>
+          <Link href="/photo-effects" className="nav-link">Photo Effects</Link>
           <Link href="/pricing" className="nav-link">Pricing</Link>
           <Link href="/api-platform" className="nav-link">API</Link>
         </div>
